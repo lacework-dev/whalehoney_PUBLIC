@@ -15,31 +15,31 @@ No operation is performed on the incoming request other than logging it to a pla
 1. Create a virtual environment.
 
 ```
-python3 -m venv venv
+$> python3 -m venv venv
 ```
 
 2. Use virtual env.
 
 ```
-source ./venv/bin/activate
+$> source ./venv/bin/activate
 ```
 
 3. Install Python dependencies.
 
 ```
-pip3 install -r requirements.txt
+$> pip3 install -r requirements.txt
 ```
 
 4. (without gunicorn) Start whalehoney.
 
 ```
-python3 wsgi.py
+$> python3 wsgi.py
 ```
 
-4. (with gunicorn) start whalehoney.
+5. (with gunicorn) start whalehoney.
 
 ```
-python3 wsgi.py --bind=0.0.0.0:2375
+$> python3 wsgi.py --bind=0.0.0.0:2375
 ```
 
 
