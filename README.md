@@ -30,14 +30,7 @@ $> source ./venv/bin/activate
 $> pip3 install -r requirements.txt
 ```
 
-4. (without gunicorn) Start whalehoney.
-
-```
-$> python3 wsgi.py
-```
-
-5. (with gunicorn) start whalehoney.
-
+4. Start whalehoney.
 ```
 $> python3 wsgi.py --bind=0.0.0.0:2375
 ```
